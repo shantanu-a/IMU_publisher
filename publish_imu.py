@@ -35,7 +35,7 @@ def publisher_script():
         # publish IMU data
         imu.header.stamp = rospy.Time.now()
         imu_pub.publish(imu)
-        rate.sleep()
+        rate.sleep()    
 
 if __name__ == '__main__':
     try:
